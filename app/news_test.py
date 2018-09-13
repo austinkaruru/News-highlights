@@ -1,5 +1,5 @@
 import unittest
-from models import sources, articles
+from .models import sources, articles
 Sources = sources.Sources
 Articles = articles.Articles
 

@@ -1,5 +1,5 @@
-from flask import Flask
+from flask import Blueprint
 
-app = Flask(__name__)
+main = Blueprint('main', __name__)
 
-from app import views
+from . import views, forms, errors

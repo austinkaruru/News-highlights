@@ -16,6 +16,27 @@
 
 <body>
     <h1> {{ message }} </h1>
+    <ul>
+        {% for category in sports %}
+        <li> {{ category.name }}</li>
+        <p> {{ category.description }}</p>
+        <a href="/Articles/{{category.id}}"><button class="btn btn-primary">Read Articles</button></a>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for category in general %}
+        <li> {{ category.name }}</li>
+        <p> {{ category.description }}</p>
+        <a href="/Articles/{{category.id}}"><button class="btn btn-primary">Read Articles</button></a>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for category in business %}
+        <li> {{ category.name }}</li>
+        <p> {{ category.description }}</p>
+        <a href="/Articles/{{category.id}}"><button class="btn btn-primary">Read Articles</button></a>
+        {% endfor %}
+    </ul>
 </body>
 
 </html>
