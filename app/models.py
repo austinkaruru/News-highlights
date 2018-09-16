@@ -10,7 +10,8 @@ class Sources:
 
 class Articles:
 
-    def __init__(self, author, title, description, url, urlToImage):
+    def __init__(self, name, author, title, description, url, urlToImage):
+        self.name = name
         self.author = author
         self.title = title
         self.description = description

@@ -1,12 +1,7 @@
-from flask import render_template
-from ..requests import get_news, get_news1
+from flask import render_template, request, redirect, url_for
+from ..requests import get_news, get_articles
 from . import main
-
-
-@main.route('/news/<int:news_id>')
-def news(news_id):
-
-    return render_template('news.html', id=news_id)
+from ..models import Sources, Articles
 
 
 @main.route('/')
@@ -16,9 +11,19 @@ def index():
     '''
     # category = get_news('business')
     # print(category)
-    sports = get_news1('sports')
-    general = get_news1('general')
-    business = get_news1('business')
+    # sports = get_news1('sports')
+    # general = get_news1('general')
+    # business = get_news1('business')
+    news = get_news()
     title = 'Home - Welcome to News highlights 2!!'
     message = 'Ola Amigo'
-    return render_template('index.html', message=message, title=title, sports=sports, general=general, business=business)
+    return render_template('index.html', message=message, title=title, sources=news)
+
+
+@main.route('/articles/<string:id>')
+def news(id):
+
+    news = get_articles(id)
+    print(news)
+
+    return render_template('articles.html', articles=news)
