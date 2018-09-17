@@ -8,4 +8,6 @@
 
 # Getting started
 
-#### `To run the app you need to
+#### `To run the app you need to:
+
+- Clone the repo on your laptop
