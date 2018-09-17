@@ -17,4 +17,6 @@
 
 # Known Bugs
 
-###
+### The project isn't fully functional yet
+
+# License
