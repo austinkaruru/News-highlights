@@ -15,9 +15,9 @@
 - Create a virtual environment
 - Run the command ./start.sh
 
-# Known Bugs
+# Future aspectives
 
-### The project isn't fully functional yet
+I plan on giving the app full functionality
 
 # License
 
