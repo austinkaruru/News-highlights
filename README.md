@@ -13,3 +13,4 @@
 - Clone the repo on your laptop
 - Install all the flask extensions(find them in the requirements.txt)
 - Create a virtual environment
+- Run the command ./start.sh
